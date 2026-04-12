@@ -3,7 +3,7 @@
 # print(numbers)
 tutorial_complete = 0
 # ------------List Methods------------
-# tutorial_check = input("") Adding after typing this document
+# tutorial_check = input("") Adding after typing this document#
 
 side_panel = "# "
 character = "#"
