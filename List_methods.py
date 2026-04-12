@@ -9,7 +9,6 @@ side_panel = "# "
 character = "#"
 top = "which section of the tutorial do you want to skip to? (use numbers only)"
 top_and_bottom_length = len(top) + 3
-#g
 
 while tutorial_complete == int(0):
     print("#" * top_and_bottom_length)
