@@ -4,6 +4,8 @@
 tutorial_complete = 0
 # ------------List Methods------------
 # tutorial_check = input("") Adding after typing this document#
+import subprocess
+import sys
 
 side_panel = "# "
 character = "#"
@@ -439,7 +441,8 @@ while tutorial_complete == int(0):
 
 
     if tutorial_section == int(99):
-        break
+        tutorial_complete = int(1)
+        subprocess.run([sys.executable, "Tutorial.py"])
 print()
 print()
 print("I hope you enjoyed this little tutorial I wrote with the knowledge I learned while learning")
