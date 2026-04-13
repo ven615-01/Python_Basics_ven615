@@ -27,7 +27,9 @@ print()
 print("The reason you got that error in the first place is because by default without commas surrounding")
 print("your text Python is actually trying to print something called a varaible")
 print()
-tutorial_complete = input('now when ready type in next to continue to the next chapter which explains variables: ')
+tutorial_complete = input('now when ready type in next to continue to the next chapter which explainsvariables or type menu to return to menu: ')
 if tutorial_complete == "next":
     subprocess.run([sys.executable, "Variables.py"])
+if tutorial_complete == "menu":
+    subprocess.run([sys.executable, "Tutorial.py"])
     
