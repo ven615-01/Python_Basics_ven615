@@ -1,0 +1,33 @@
+import sys
+import subprocess
+import time
+print()
+print("FUNCTIONS")
+print("=========")
+print()
+print("In python a function is a block of code that only runs when it's called.")
+print("To call a function you simply need to type it and they usually end with brackets '()' ")
+print("Python contains many built in functions that you don't have to define yourself.")
+print("For example 'print()' which is a built in function that is used to display words, numbers")
+print("and variables as plain text, try this now")
+print("Open your python terminal or IDE i recommend the IDE called PyCharm from jetbrains")
+print("Upon opening your python terminal or opening the IDE and creating your first project type in")
+print("print('my name is venatic') and then hit run(functions are case sensitive so you can't capitalise them")
+print("also make sure to use commas otherwise you will get an error (more on that soon) '' ")
+print("It should now look like this on your terminal window:")
+print()
+print("my name is venatic")
+print()
+print(" now if you got this error:")
+print()
+print("print(my name is venatic)")
+print("      ^^^^^^^^^^^^^^^^^^")
+print("SyntaxError: invalid syntax. Perhaps you forgot a comma?")
+print()
+print("The reason you got that error in the first place is because by default without commas surrounding")
+print("your text Python is actually trying to print something called a varaible")
+print()
+tutorial_complete = input('now when ready type in next to continue to the next chapter which explains variables: ')
+if tutorial_complete == "next":
+    subprocess.run([sys.executable, "Variables.py"])
+    
