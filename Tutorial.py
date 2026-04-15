@@ -5,12 +5,13 @@ import sys
 menu_seperator = ["#"]
 menu_items = [
     '\33[0;31m01 - Functions\033[0m',
-    '\33[0;31m02 - variables\033[0m',
-    '\33[0;31m03 - int,str,bool\033[0m',
-    '\33[0;31m04 - if statements\033[0m',
-    '\33[0;31m05 - loops\033[0m',
-    '\33[0;31m06 - lists\033[0m',
-    '\33[0;31m07 - list methods\033[0m',
+    '\33[0;31m02 - variables, int float\033[0m',
+    '\33[0;31m      and Bool,\033[0m',
+    '',
+    '\33[0;31m03 - if statements\033[0m',
+    '\33[0;31m04 - loops\033[0m',
+    '\33[0;31m05 - lists\033[0m',
+    '\33[0;31m06 - list methods\033[0m',
 ]
 print()
 print("Welcome to my tutorial where I will basically be documenting everything I learn")
@@ -19,13 +20,13 @@ print()
 print("TBA = To Be Added")
 print()
 print('###################################')
-print(f'# {menu_items[0]}(TBA)             #') #Functions
-print(f'# {menu_items[1]}(TBA)             #') #Variables
-print(f'# {menu_items[2]}(TBA)          #') # Int,str, bool
-print(f'# {menu_items[3]}(TBA)         #') # if statements
-print(f'# {menu_items[4]}(TBA)                 #') #loops
-print(f'# {menu_items[5]}(TBA)                 #') #lists
-print(f'# {menu_items[6]}               #') #list methods
+print(f'# {menu_items[0]}(WIP)             #') #                01 - Functions
+print(f'# {menu_items[1]}       #') #                           02 - Variables, int,float:
+print(f'# {menu_items[2]}(WIP)            #') #                        -and Bool
+print(f'# {menu_items[3]}                                #') #       (space)
+print(f'# {menu_items[4]}(TBA)         #')#                     03 - if statements
+print(f'# {menu_items[5]}(TBA)                 #') #            04 - loops
+print(f'# {menu_items[6]}                      #') #            05 - lists
 print('###################################')
 print()
 menu_item_picked = input("Type in the number corresponding to the chapter you would like to navigate to: ")
