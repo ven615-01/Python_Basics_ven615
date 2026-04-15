@@ -28,7 +28,7 @@ print(f'# {menu_items[3]}                                #') #       (space)
 print(f'# {menu_items[4]}(TBA)         #')#                     03 - if statements
 print(f'# {menu_items[5]}(TBA)                 #') #            04 - loops
 print(f'# {menu_items[6]}                      #') #            05 - lists
-print(f'# {menu_items[7]}               #')  #                  06 - list methods
+print(f'# {menu_items[7]}               #')  #                 x 06 - list methods
 print('###################################')
 print()
 menu_item_picked = input("Type in the number corresponding to the chapter you would like to navigate to or type exit to quit: ")
