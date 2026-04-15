@@ -19,6 +19,7 @@ print("in the hopes of teaching other newbies by documenting my learning process
 print()
 print("TBA = To Be Added")
 print()
+# Menu items/index
 print('###################################')
 print(f'# {menu_items[0]}(WIP)             #') #                01 - Functions
 print(f'# {menu_items[1]}       #') #                           02 - Variables, int,float:
@@ -27,13 +28,31 @@ print(f'# {menu_items[3]}                                #') #       (space)
 print(f'# {menu_items[4]}(TBA)         #')#                     03 - if statements
 print(f'# {menu_items[5]}(TBA)                 #') #            04 - loops
 print(f'# {menu_items[6]}                      #') #            05 - lists
+print(f'# {menu_items[7]}               #')  #                  06 - list methods
 print('###################################')
 print()
-menu_item_picked = input("Type in the number corresponding to the chapter you would like to navigate to: ")
+menu_item_picked = input("Type in the number corresponding to the chapter you would like to navigate to or type exit to quit: ")
 
-if menu_item_picked == '7':
+
+if menu_item_picked == '1':
+    subprocess.run([sys.executable, "Functions.py"])
+if menu_item_picked == '2':
+    subprocess.run([sys.executable, "Variables.py"])
+if menu_item_picked == '3':
+    print("Those options are being added and are currently unavailable")
+    menu_item_picked = input("Type in the number corresponding to the chapter you would like to navigate to or type exit to quit: ")
+if menu_item_picked == '4':
+    print("Those options are being added and are currently unavailable")
+    menu_item_picked = input("Type in the number corresponding to the chapter you would like to navigate to or type exit to quit: ")
+
+if menu_item_picked == '5':
+    print("Those options are being added and are currently unavailable")
+    menu_item_picked = input("Type in the number corresponding to the chapter you would like to navigate to or type exit to quit: ")
+
+if menu_item_picked == '6':
     print("opening List_methods.py")
     subprocess.run([sys.executable, "List_methods.py"]) #opens the chapter that is another python file
     print("Opening chapter List_methods.py")
-if menu_item_picked == '1':
-    subprocess.run([sys.executable, "Functions.py"])
+
+if menu_item_picked == 'exit' or 'exit':
+    print("Goodbye!!")
