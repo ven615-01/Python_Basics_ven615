@@ -1,7 +1,7 @@
 # numbers = [1,2,3,4,5]
 # numbers[1:4] = [] # this is equivelent to del numbers[1:4] because it removes numbers 2 (counted from 0 that is) through to 4
 # print(numbers)
-tutorial_complete = 0
+tutorial_complete = '0'
 # ------------List Methods------------
 # tutorial_check = input("") Adding after typing this document#
 import subprocess
@@ -12,7 +12,7 @@ character = "#"
 top = "which section of the tutorial do you want to skip to? (use numbers only)"
 top_and_bottom_length = len(top) + 3
 
-while tutorial_complete == int(0):
+while tutorial_complete == '0':
     print("#" * top_and_bottom_length)
     print(side_panel + "which section of the tutorial do you want to skip to? (use numbers only)" + "#")
     print("#" * top_and_bottom_length)
@@ -27,10 +27,11 @@ while tutorial_complete == int(0):
     print(side_panel + "09 - POP" + "                                                                #")
     print(side_panel + "type 00 to see this index again at any point of the tutorial" + "            #")
     print("#" * top_and_bottom_length)
-    tutorial_section = int(input("Choose number, type 99 to quit or 00 to see index: "))
+    tutorial_section = input("Choose number, type exit to quit or index to see index: ")
 
 
-    if tutorial_section == int(00):
+    if tutorial_section == "index":
+        print("\033[H\033[J", end="")
         print("#" * top_and_bottom_length)
         print(side_panel + "which section of the tutorial do you want to skip to? (use numbers only)" + "#")
         print("#" * top_and_bottom_length)
@@ -45,9 +46,10 @@ while tutorial_complete == int(0):
         print(side_panel + "09 - POP" + "                                                                #")
         print(side_panel + "type 00 to see this index again at any point of the tutorial" + "            #")
         print("#" * top_and_bottom_length)
-        tutorial_section = int(input("Choose number, type 99 to quit or 00 to see index: "))
+        tutorial_section = input("Choose number, type exit to quit or index to see index: ")
 
-    if tutorial_section == int(1):
+    if tutorial_section == '1':
+        print("\033[H\033[J", end="")
         print()
         print()
         print()
@@ -61,9 +63,10 @@ while tutorial_complete == int(0):
         print("Lists have several methods that allow you to examine or modify their contents.")
         print()
         print("###-END OF INTRODUCTION-###")
-        tutorial_section = int(input("Choose number, type 99 to quit or 00 to see index: "))
+        tutorial_section = input("Choose number, type exit to quit or index to see index: ")
 
-    if tutorial_section == int(2):
+    if tutorial_section == '2':
+        print("\033[H\033[J", end="")
         print()
         print()
         print()
@@ -89,9 +92,10 @@ while tutorial_complete == int(0):
         print("a new, modified list; instead, it modifies the old one directly. This is usually what you want, but it may sometimes cause trouble")
         print()
         print("###-END OF APPEND-###")
-        tutorial_section = int(input("Choose number, type 99 to quit or 00 to see index: "))
+        tutorial_section = input("Choose number, type exit to quit or index to see index: ")
 
-    if tutorial_section == int(3):
+    if tutorial_section == '3':
+        print("\033[H\033[J", end="")
         print()
         print()
         print()
@@ -116,11 +120,12 @@ while tutorial_complete == int(0):
         print("It's similar to the slice assignment lst[:] = []")
         print()
         print("###-END OF CLEAR-###")
-        tutorial_section = int(input("Choose number, type 99 to quit or 00 to see index: "))
+        tutorial_section = input("Choose number, type exit to quit or index to see index: ")
 
 
 
-    if tutorial_section == int(4):
+    if tutorial_section == '4':
+        print("\033[H\033[J", end="")
         print()
         print()
         print()
@@ -161,12 +166,13 @@ while tutorial_complete == int(0):
         print("---end program")
         print()
         print("###-END OF COPY-###")
-        tutorial_section = int(input("Choose number, type 99 to quit or 00 to see index: "))
+        tutorial_section = input("Choose number, type exit to quit or index to see index: ")
 
 
 
 
-    if tutorial_section == int(5):
+    if tutorial_section == '5':
+        print("\033[H\033[J", end="")
         print()
         print()
         print()
@@ -202,12 +208,13 @@ while tutorial_complete == int(0):
         print("---end program---")
         print()
         print("###-END OF COUNT-###")
-        tutorial_section = int(input("Choose number, type 99 to quit or 00 to see index: "))
+        tutorial_section = input("Choose number, type exit to quit or index to see index: ")
 
 
 
 
-    if tutorial_section == int(6):
+    if tutorial_section == '6':
+        print("\033[H\033[J", end="")
         print()
         print()
         print()
@@ -282,10 +289,11 @@ while tutorial_complete == int(0):
         print()
         print("###-END OF EXTEND-###")
 
-        tutorial_section = int(input("Choose number, type 99 to quit or 00 to see index: "))
+        tutorial_section = input("Choose number, type exit to quit or index to see index: ")
 
 
-    if tutorial_section == int(7):
+    if tutorial_section == '7':
+        print("\033[H\033[J", end="")
         print()
         print()
         print()
@@ -330,9 +338,10 @@ while tutorial_complete == int(0):
         print()
         print("###-end of INDEX-###")
         
-        tutorial_section = int(input("Choose number, type 99 to quit or 00 to see index: "))
+        tutorial_section = input("Choose number, type exit to quit or index to see index: ")
 
-    if tutorial_section == int(8):
+    if tutorial_section == '8':
+        print("\033[H\033[J", end="")
         print()
         print()
         print()
@@ -372,9 +381,10 @@ while tutorial_complete == int(0):
         print()
         print("###-END OF INSERT-###")
 
-        tutorial_section = int(input("Choose number, type 99 to quit or 00 to see index: "))
+        tutorial_section = input("Choose number, type exit to quit or index to see index: ")
     
-    if tutorial_section == int(9):
+    if tutorial_section == '9':
+        print("\033[H\033[J", end="")
         print()
         print()
         print()
@@ -436,12 +446,12 @@ while tutorial_complete == int(0):
         print()
         print("###-END OF POP-###")
 
-        tutorial_section = int(input("Choose number, type 99 to quit or 00 to see index: "))
+        tutorial_section = input("Choose number, type exit to quit or index to see index: ")
 
 
 
-    if tutorial_section == int(99):
-        tutorial_complete = int(1)
+    if tutorial_section == 'exit' or 'Exit' or 'EXIT':
+        tutorial_complete = '1'
         subprocess.run([sys.executable, "Tutorial.py"])
 print()
 print()
